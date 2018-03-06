@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Select Sex-->
+        <scene sceneID="jM2-Fw-hSu">
+            <objects>
+                <viewController storyboardIdentifier="SelectSex" id="Xtz-dt-TR4" customClass="SelectSex" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1RB-Vt-oBE"/>
+                        <viewControllerLayoutGuide type="bottom" id="8z9-r2-Ca0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="co5-7R-nZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URj-uu-noA" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="backAction:" destination="Xtz-dt-TR4" eventType="touchUpInside" id="zdp-uS-1nV"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlN-AY-nYi">
+                                <rect key="frame" x="-1" y="566" width="376" height="101"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWd-5D-GQN">
+                                        <rect key="frame" x="0.0" y="0.0" width="376" height="50"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VwB-7f-Rse"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Male">
+                                            <color key="titleColor" red="0.42745098039215684" green="0.44313725490196076" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="maleAction:" destination="Xtz-dt-TR4" eventType="touchUpInside" id="Nen-ON-52x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWI-fp-5Ce">
+                                        <rect key="frame" x="0.0" y="51" width="376" height="50"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="i6v-Jt-kfP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Famale">
+                                            <color key="titleColor" red="0.42745098040000001" green="0.4431372549" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="famaleAction:" destination="Xtz-dt-TR4" eventType="touchUpInside" id="hBG-K1-aGr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UWI-fp-5Ce" secondAttribute="bottom" id="7Xn-fc-FIA"/>
+                                    <constraint firstAttribute="height" constant="101" id="FZt-fd-l4c"/>
+                                    <constraint firstItem="UWI-fp-5Ce" firstAttribute="centerX" secondItem="PlN-AY-nYi" secondAttribute="centerX" id="MjP-AV-Zd1"/>
+                                    <constraint firstItem="UWI-fp-5Ce" firstAttribute="width" secondItem="PlN-AY-nYi" secondAttribute="width" id="WQH-BT-wsj"/>
+                                    <constraint firstItem="JWd-5D-GQN" firstAttribute="centerX" secondItem="PlN-AY-nYi" secondAttribute="centerX" id="gdT-av-uZt"/>
+                                    <constraint firstItem="JWd-5D-GQN" firstAttribute="width" secondItem="PlN-AY-nYi" secondAttribute="width" id="klD-ps-Cl8"/>
+                                    <constraint firstItem="JWd-5D-GQN" firstAttribute="top" secondItem="PlN-AY-nYi" secondAttribute="top" id="sk0-ET-vnY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8z9-r2-Ca0" firstAttribute="top" secondItem="PlN-AY-nYi" secondAttribute="bottom" id="50P-g5-Q4J"/>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="centerX" secondItem="co5-7R-nZd" secondAttribute="centerX" id="73r-xT-OrK"/>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="height" secondItem="co5-7R-nZd" secondAttribute="height" id="MU3-SW-S1E"/>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="centerY" secondItem="co5-7R-nZd" secondAttribute="centerY" id="YKD-0n-s0Y"/>
+                            <constraint firstItem="PlN-AY-nYi" firstAttribute="width" secondItem="co5-7R-nZd" secondAttribute="width" id="pKc-UD-vJs"/>
+                            <constraint firstItem="PlN-AY-nYi" firstAttribute="centerX" secondItem="co5-7R-nZd" secondAttribute="centerX" id="pZu-fo-Bve"/>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="width" secondItem="co5-7R-nZd" secondAttribute="width" id="wH1-rT-87O"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btFamale" destination="UWI-fp-5Ce" id="3wP-ZL-cRF"/>
+                        <outlet property="btMale" destination="JWd-5D-GQN" id="SWN-pd-FiZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQO-uE-p3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2387.5" y="1741.5"/>
+        </scene>
+    </scenes>
+</document>

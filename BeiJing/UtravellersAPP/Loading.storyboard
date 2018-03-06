@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--MsgView2/举报-->
+        <scene sceneID="ABP-kR-1Lj">
+            <objects>
+                <viewController storyboardIdentifier="Loading" id="MZR-R5-owc" userLabel="MsgView2/举报" customClass="Loading" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FbY-i8-u7J"/>
+                        <viewControllerLayoutGuide type="bottom" id="k4u-gT-Cs3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VW1-jz-Gud">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieK-cm-ED5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umD-A8-Xe1" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-4c-AT3">
+                                        <rect key="frame" x="282" y="202" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rEa-4c-AT3" firstAttribute="centerX" secondItem="umD-A8-Xe1" secondAttribute="centerX" id="NNe-GG-uzF"/>
+                                    <constraint firstItem="rEa-4c-AT3" firstAttribute="centerY" secondItem="umD-A8-Xe1" secondAttribute="centerY" constant="-80" id="XrZ-rZ-pJR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ieK-cm-ED5" firstAttribute="centerY" secondItem="VW1-jz-Gud" secondAttribute="centerY" id="2dx-K9-0Q4"/>
+                            <constraint firstItem="ieK-cm-ED5" firstAttribute="centerX" secondItem="VW1-jz-Gud" secondAttribute="centerX" id="8N2-sK-QgP"/>
+                            <constraint firstItem="umD-A8-Xe1" firstAttribute="centerY" secondItem="VW1-jz-Gud" secondAttribute="centerY" id="8Tk-jA-79g"/>
+                            <constraint firstItem="ieK-cm-ED5" firstAttribute="height" secondItem="VW1-jz-Gud" secondAttribute="height" id="IEr-tj-jZZ"/>
+                            <constraint firstItem="umD-A8-Xe1" firstAttribute="height" secondItem="VW1-jz-Gud" secondAttribute="height" id="alk-Rj-Ns2"/>
+                            <constraint firstItem="ieK-cm-ED5" firstAttribute="width" secondItem="VW1-jz-Gud" secondAttribute="width" id="e7e-A6-jS0"/>
+                            <constraint firstItem="umD-A8-Xe1" firstAttribute="width" secondItem="VW1-jz-Gud" secondAttribute="width" id="fUu-rn-Gy8"/>
+                            <constraint firstItem="umD-A8-Xe1" firstAttribute="centerX" secondItem="VW1-jz-Gud" secondAttribute="centerX" id="xrp-Gy-gue"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMA-Yj-niu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="1994"/>
+        </scene>
+    </scenes>
+</document>

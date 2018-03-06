@@ -1,0 +1,6 @@
+framework module OHAttributedLabel {
+  umbrella header "OHAttributedLabel-iOS9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

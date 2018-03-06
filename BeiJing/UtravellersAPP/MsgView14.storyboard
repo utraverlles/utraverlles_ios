@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Msg View14-->
+        <scene sceneID="jM2-Fw-hSu">
+            <objects>
+                <viewController storyboardIdentifier="MsgView14" id="Xtz-dt-TR4" customClass="MsgView14" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1RB-Vt-oBE"/>
+                        <viewControllerLayoutGuide type="bottom" id="8z9-r2-Ca0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="co5-7R-nZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URj-uu-noA" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="backAction:" destination="Xtz-dt-TR4" eventType="touchUpInside" id="cfl-Iw-BvU"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlN-AY-nYi">
+                                <rect key="frame" x="36" y="535" width="124" height="96"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="评论三角 copy" translatesAutoresizingMaskIntoConstraints="NO" id="12t-pQ-2gi">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="21A-WK-n32"/>
+                                            <constraint firstAttribute="width" constant="124" id="gcK-Sh-NJn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-cm-8fm">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Group">
+                                            <color key="titleColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="groupAction:" destination="Xtz-dt-TR4" eventType="touchUpInside" id="v40-EI-99P"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug6-CR-dma">
+                                        <rect key="frame" x="7" y="46" width="110" height="1"/>
+                                        <color key="backgroundColor" red="0.66274509803921566" green="0.6588235294117647" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="SzP-Rh-bjO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4Q-V7-LiR">
+                                        <rect key="frame" x="0.0" y="47" width="124" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Unfollow">
+                                            <color key="titleColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="unfollowAction:" destination="Xtz-dt-TR4" eventType="touchUpInside" id="Lqd-QB-TLI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ug6-CR-dma" firstAttribute="top" secondItem="dSe-cm-8fm" secondAttribute="bottom" id="0eA-zt-Ivs"/>
+                                    <constraint firstItem="y4Q-V7-LiR" firstAttribute="width" secondItem="PlN-AY-nYi" secondAttribute="width" id="AEg-rW-0Lw"/>
+                                    <constraint firstItem="12t-pQ-2gi" firstAttribute="centerX" secondItem="PlN-AY-nYi" secondAttribute="centerX" id="BVA-vA-AkX"/>
+                                    <constraint firstItem="dSe-cm-8fm" firstAttribute="top" secondItem="PlN-AY-nYi" secondAttribute="top" id="FI4-Ni-shu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ug6-CR-dma" secondAttribute="trailing" constant="7" id="NdH-zj-tJ9"/>
+                                    <constraint firstItem="y4Q-V7-LiR" firstAttribute="top" secondItem="Ug6-CR-dma" secondAttribute="bottom" id="OgC-X7-EAA"/>
+                                    <constraint firstItem="12t-pQ-2gi" firstAttribute="width" secondItem="PlN-AY-nYi" secondAttribute="width" id="TiJ-67-NTb"/>
+                                    <constraint firstItem="12t-pQ-2gi" firstAttribute="height" secondItem="PlN-AY-nYi" secondAttribute="height" id="UOQ-Py-ckB"/>
+                                    <constraint firstItem="Ug6-CR-dma" firstAttribute="centerY" secondItem="PlN-AY-nYi" secondAttribute="centerY" constant="-2" id="Wzy-vL-H4s"/>
+                                    <constraint firstItem="Ug6-CR-dma" firstAttribute="leading" secondItem="PlN-AY-nYi" secondAttribute="leading" constant="7" id="aYf-dH-Okw"/>
+                                    <constraint firstItem="12t-pQ-2gi" firstAttribute="centerY" secondItem="PlN-AY-nYi" secondAttribute="centerY" id="hl0-fL-DbV"/>
+                                    <constraint firstItem="y4Q-V7-LiR" firstAttribute="centerX" secondItem="PlN-AY-nYi" secondAttribute="centerX" id="i2T-Lp-vGt"/>
+                                    <constraint firstItem="dSe-cm-8fm" firstAttribute="centerX" secondItem="PlN-AY-nYi" secondAttribute="centerX" id="kAF-Zl-CIA"/>
+                                    <constraint firstAttribute="bottom" secondItem="y4Q-V7-LiR" secondAttribute="bottom" constant="4" id="mVJ-n4-8ZN"/>
+                                    <constraint firstItem="dSe-cm-8fm" firstAttribute="width" secondItem="PlN-AY-nYi" secondAttribute="width" id="t6a-eC-r8R"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="centerX" secondItem="co5-7R-nZd" secondAttribute="centerX" id="73r-xT-OrK"/>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="height" secondItem="co5-7R-nZd" secondAttribute="height" id="MU3-SW-S1E"/>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="centerY" secondItem="co5-7R-nZd" secondAttribute="centerY" id="YKD-0n-s0Y"/>
+                            <constraint firstItem="8z9-r2-Ca0" firstAttribute="top" secondItem="PlN-AY-nYi" secondAttribute="bottom" constant="36" id="ezy-c5-RhA"/>
+                            <constraint firstItem="URj-uu-noA" firstAttribute="width" secondItem="co5-7R-nZd" secondAttribute="width" id="wH1-rT-87O"/>
+                            <constraint firstItem="PlN-AY-nYi" firstAttribute="leading" secondItem="co5-7R-nZd" secondAttribute="leadingMargin" constant="20" id="zNF-Wr-i3A"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQO-uE-p3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2307.5" y="1791.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="评论三角 copy" width="124" height="96"/>
+    </resources>
+</document>

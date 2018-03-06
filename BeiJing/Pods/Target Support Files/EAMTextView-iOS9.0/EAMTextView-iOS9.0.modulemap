@@ -1,0 +1,6 @@
+framework module EAMTextView {
+  umbrella header "EAMTextView-iOS9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

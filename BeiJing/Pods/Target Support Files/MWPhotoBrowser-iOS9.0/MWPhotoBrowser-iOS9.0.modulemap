@@ -1,0 +1,6 @@
+framework module MWPhotoBrowser {
+  umbrella header "MWPhotoBrowser-iOS9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}
